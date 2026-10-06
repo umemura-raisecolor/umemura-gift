@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>梅村恵美 特典カタログ</title>
+<meta name="description" content="梅村恵美 公式LINEご登録者限定の特典カタログ">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: one narrow reading column, like a letter; steps run as a vertical path with gifts hanging off it */
+:root{
+  --bg:#FBF7F8; --paper:#FFFFFF; --ink:#3A2A33; --muted:#7D6A74;
+  --rose:#C46A8C; --rose-soft:#F4E3EA; --stem:#5F7D63; --line:#E8D9DF;
+  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --line:#3E3038; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --line:#3E3038; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.85;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-inline:18px;padding-block:0 56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:700;line-height:1.45}
+a{color:var(--rose)}
+a:focus-visible,.btn:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+
+/* hero */
+.hero{padding-block:48px 36px;display:grid;gap:18px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--stem);font-weight:700}
+.hero h1{font-size:clamp(26px,7vw,36px);line-height:1.4}
+.hero h1 em{font-style:normal;color:var(--rose)}
+.hero .lead{color:var(--muted);margin:0}
+.thanks{background:var(--rose-soft);border-radius:4px;padding:14px 16px;margin:0}
+.intro{display:grid;grid-template-columns:132px minmax(0,1fr);gap:18px;align-items:center}
+.intro img{width:132px;height:auto;aspect-ratio:346/498;object-fit:cover;border-radius:4px;display:block;max-width:100%;align-self:start}
+.intro .who{display:grid;gap:4px;min-width:0}
+.who-name{font-family:var(--display);font-size:20px;font-weight:700}
+.who-role{font-size:13.5px;color:var(--muted);line-height:1.7}
+@media (max-width:420px){.intro{grid-template-columns:104px minmax(0,1fr);gap:14px}.intro img{width:104px}}
+.sign-row{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.sign-row img{width:52px;height:52px;border-radius:50%;object-fit:cover;object-position:50% 22%}
+
+section{padding-block:40px 8px}
+.sec-title{font-size:21px;margin-bottom:6px}
+.sec-sub{color:var(--muted);margin:0 0 20px}
+
+/* changes */
+.changes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:0;padding:0;list-style:none}
+.changes li{background:var(--paper);border:1px solid var(--line);padding:14px 14px 16px;display:grid;gap:4px;min-width:0}
+.changes b{font-family:var(--display);font-size:16px;color:var(--rose)}
+.changes span{font-size:14px;line-height:1.7}
+@media (max-width:460px){.changes{grid-template-columns:1fr}}
+
+/* steps path */
+.step{position:relative;padding-left:34px;padding-bottom:28px}
+.step::before{content:"";position:absolute;left:11px;top:26px;bottom:0;width:2px;background:var(--line)}
+.step:last-child::before{display:none}
+.step-dot{position:absolute;left:0;top:2px;width:24px;height:24px;border-radius:50%;background:var(--stem);color:#fff;font-size:12px;font-weight:700;display:grid;place-items:center;font-variant-numeric:tabular-nums}
+.step-label{font-size:12px;letter-spacing:.14em;color:var(--stem);font-weight:700}
+.step h3{font-size:19px;margin-bottom:14px}
+.gifts{display:grid;gap:12px}
+.gift{background:var(--paper);border:1px solid var(--line);padding:16px;display:grid;gap:8px;min-width:0}
+.gift-no{font-size:12px;color:var(--muted);letter-spacing:.08em;font-variant-numeric:tabular-nums}
+.gift h4{font-family:var(--display);font-size:16.5px;margin:0;line-height:1.55}
+.gift p{margin:0;font-size:14.5px;line-height:1.8}
+.benefit{border-left:3px solid var(--rose);padding-left:10px;color:var(--ink);font-weight:500}
+.btns{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:14px;padding:9px 16px;border-radius:999px;background:var(--rose);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.btn:hover{filter:brightness(1.06)}
+.note{font-size:12.5px;color:var(--muted)}
+
+/* closing */
+.closing{margin-top:12px;background:var(--paper);border:1px solid var(--line);padding:28px 20px;display:grid;gap:14px}
+.closing h2{font-size:22px}
+.closing ul{margin:0;padding-left:1.2em;display:grid;gap:4px}
+.trial{background:var(--rose-soft);padding:18px;display:grid;gap:10px;text-align:center}
+.trial strong{font-family:var(--display);font-size:19px}
+.kw{display:inline-block;background:var(--paper);border:1px dashed var(--rose);padding:2px 10px;font-weight:700;color:var(--rose)}
+.sign{font-family:var(--display);text-align:right;font-size:17px;margin:0}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="hero">
+    <div class="eyebrow">公式LINEご登録者限定</div>
+    <h1>想いが<em>届く言葉</em>になる<br>10の特典カタログ</h1>
+    <p class="lead">「何を・どう伝えるか」が見えてくる、梅村恵美の全10プレゼント</p>
+    <div class="intro">
+      <img src="umemura.jpg" alt="梅村恵美の写真" width="346" height="498">
+      <div class="who">
+        <div class="who-name">梅村恵美</div>
+        <div class="who-role">売れる言葉を書く人。電話営業20年の経験から、note・ブログ記事、セールス文、営業トークの台本を、あなたらしい言葉でお作りしています。</div>
+      </div>
+    </div>
+    <p class="thanks">公式LINEへのご登録、本当にありがとうございます。これまで個別にお渡ししてきた特典を、このページにすべてまとめました。どれからでも受け取れますが、下の4ステップの順に使うと、いちばん力を発揮します。</p>
+  </header>
+
+  <section>
+    <h2 class="sec-title">順番に使うと手に入る、4つの変化</h2>
+    <p class="sec-sub">バラバラに使うより、ステップ順がおすすめです。</p>
+    <ul class="changes">
+      <li><b>迷いが消える</b><span>頑張っているのに形にならない理由がわかり、今やることが1つに絞れます。</span></li>
+      <li><b>自分の言葉が見つかる</b><span>「私の強みって何？」が晴れて、あなたらしい発信の軸ができます。</span></li>
+      <li><b>商品が形になる</b><span>お客様に選ばれる理由のある商品が完成します。</span></li>
+      <li><b>想いが届く</b><span>売り込まなくても、信頼が積み上がる発信ができるようになります。</span></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 class="sec-title">4ステップで受け取る</h2>
+    <p class="sec-sub">ボタンを押すと、それぞれの特典が開きます。</p>
+
+    <div class="step">
+      <div class="step-dot">1</div>
+      <div class="step-label">STEP 1</div>
+      <h3>今の現在地を知る</h3>
+      <div class="gifts">
+        <article class="gift">
+          <div class="gift-no">特典 01</div>
+          <h4>起業迷子脱出・現在地診断チャート（全12枚）</h4>
+          <p>3つの質問にYES/NOで答えるだけで、「コンセプト迷子」「かくれんぼ」「完璧主義」「自転車操業」のどのタイプかがわかります。タイプ別の次の一手と、処方箋マトリックス付き。</p>
+          <p class="benefit">頑張っているのに形にならない理由がはっきりして、明日やることが1つに絞れます。</p>
+          <div class="btns"><a class="btn" href="https://x.gd/YQdi4" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+        <article class="gift">
+          <div class="gift-no">特典 02</div>
+          <h4>ビジネス再構築ロードマップ（動画）＋ 5つの再構築チェックリスト（PDF）</h4>
+          <p>集客・商品・ターゲット・時間と仕組み・マインドの5つの「濁り」をチェックし、ビジネスを立て直す流れを動画で解説します。チェックが3つ以上なら、頑張りすぎのサインです。</p>
+          <p class="benefit">「足りない」のではなく「抱えすぎ」だったと気づけます。手放すことと、集中すべきことが見えてきます。</p>
+          <div class="btns"><a class="btn" href="https://x.gd/gaQ6m" target="_blank" rel="noopener">チェックリストを受け取る</a></div>
+        </article>
+        <article class="gift">
+          <div class="gift-no">特典 03</div>
+          <h4>「1年後も今のまま？」現状維持の罠 打破ロードマップ</h4>
+          <p>毎日頑張っているのに結果が変わらない原因を、「作業」と「仕事」の違いから解説。タスクの仕分け、1日1つの「初めて」、挑戦の時間を朝に天引き、の3ステップで抜け出します。</p>
+          <p class="benefit">自分を責めずに、1日の順番を変えるだけで、1年後の景色が変わり始めます。</p>
+          <div class="btns"><a class="btn" href="https://x.gd/MCfKh" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-dot">2</div>
+      <div class="step-label">STEP 2</div>
+      <h3>自分らしさを言葉にする</h3>
+      <div class="gifts">
+        <article class="gift">
+          <div class="gift-no">特典 04</div>
+          <h4>あなたの発信魅力タイプ診断シート</h4>
+          <p>質問に答えながら、あなたの発信の魅力がどのタイプかを見つける診断シート。発信の方向性や「あなたらしさ」を整理し、固定ファンづくりにつなげます。</p>
+          <p class="benefit">「私の強みって何だろう」が晴れて、自信を持って発信できる軸が見つかります。</p>
+          <div class="btns"><a class="btn" href="https://florentine-verse-e80.notion.site/3684a506ad3080c4945dd2fc47d9a862" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+        <article class="gift">
+          <div class="gift-no">特典 05</div>
+          <h4>発信が止まらなくなる言語化テンプレ</h4>
+          <p>発信が止まってしまう原因を整理しながら、あなたらしい発信を見つけていくワーク。気になる質問から取り組めます。</p>
+          <p class="benefit">「何を書けばいいかわからない」がなくなり、あなたの経験がそのまま発信ネタに変わります。</p>
+          <div class="btns"><a class="btn" href="https://florentine-verse-e80.notion.site/3664a506ad3080838ca8cdb120ceafee" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-dot">3</div>
+      <div class="step-label">STEP 3</div>
+      <h3>商品を形にする</h3>
+      <div class="gifts">
+        <article class="gift">
+          <div class="gift-no">特典 06</div>
+          <h4>初商品設計5ステップ動画</h4>
+          <p>「発信はしているけれど、何を商品にしたらいいか分からない」「出会いはあるのに、何を提案したらいいか迷う」方へ。はじめての商品づくりを5つのステップで解説します。</p>
+          <p class="benefit">お客様に選ばれる理由のある商品を、自分の手で形にできるようになります。</p>
+          <div class="btns"><a class="btn" href="https://drive.google.com/file/d/1DmimC_ACeRZi2G8Tt2K1Kt-QZI6NjCbR/view?usp=sharing" target="_blank" rel="noopener">動画を見る</a></div>
+        </article>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-dot">4</div>
+      <div class="step-label">STEP 4</div>
+      <h3>発信で届ける</h3>
+      <div class="gifts">
+        <article class="gift">
+          <div class="gift-no">特典 07</div>
+          <h4>【2026年完全版】X（旧Twitter）運用・最強攻略マスターマニュアル</h4>
+          <p>最新のアルゴリズム、フォロワー0→100→1,000→3,000人のフェーズ別攻略、プロフィール設計、「伸びなくなる危険行為21選」まで。</p>
+          <p class="benefit">やみくもな投稿をやめて、今のフェーズで本当にやるべきことに集中できます。</p>
+          <div class="btns"><a class="btn" href="https://x.gd/0JJyR" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+        <article class="gift">
+          <div class="gift-no">特典 08</div>
+          <h4>【2026年完全版】Facebookページ攻略マニュアル</h4>
+          <p>投稿しても伸びない理由、売り込み広告だけに頼ると失敗する理由、ファンの質を変える言葉選び、反応が変わる画像と文章の型（QUESTの法則）を、専門用語なしで解説。</p>
+          <p class="benefit">遠回りを減らして、「あなただからお願いしたい」と言ってくれるお客様とつながれます。</p>
+          <div class="btns"><a class="btn" href="https://walnut-baron-07e.notion.site/2026-Facebook-37d253db410b801ea608ebd030685682" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+        <article class="gift">
+          <div class="gift-no">特典 09</div>
+          <h4>【2026年完全版】Facebook投稿ネタ100選</h4>
+          <p>自己開示・ノウハウ・お客様の声・裏舞台など9カテゴリーの投稿アイデア100個。投稿の黄金比率と、ターゲット別の投稿時間帯もまとめています。</p>
+          <p class="benefit">「今日は何を投稿しよう」と悩む時間がなくなり、1ヶ月分の発信計画がすぐに組めます。</p>
+          <div class="btns"><a class="btn" href="https://walnut-baron-07e.notion.site/2026-Facebook-100-38a253db410b80459e3bcfba89689647" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+        <article class="gift">
+          <div class="gift-no">特典 10</div>
+          <h4>stand.fm 最短収益化マニュアル</h4>
+          <p>商品設計 → 導線設計 → 売れる発信設計の順に、売上から逆算してスタエフを組み立てる方法。8〜10分の配信構成テンプレートと、クロスメディア戦略の補講付き。</p>
+          <p class="benefit">再生数に一喜一憂せず、声で信頼を積み上げて、自然に相談や申し込みが入る流れをつくれます。</p>
+          <div class="btns"><a class="btn" href="https://walnut-baron-07e.notion.site/stand-fm-335253db410b83cf964d81baa3f487b7" target="_blank" rel="noopener">受け取る</a></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="closing" aria-labelledby="closing-title">
+    <h2 id="closing-title">あなたの想いは、ちゃんと言葉にできる</h2>
+    <p>ここまで見てくださって、ありがとうございます。これらの特典は、たくさんの方と1対1でお話しする中で、みなさんが本当につまずくところに合わせて作ってきたものです。まずはSTEP 1の「現在地診断チャート」から、気軽に手を動かしてみてください。</p>
+    <p>そして進めていく中で、</p>
+    <ul>
+      <li>やることはわかったけれど、書く時間がとれない</li>
+      <li>自分で書くと、どうしても売り込みっぽくなる</li>
+      <li>想いはあるのに、うまく言葉にならない</li>
+    </ul>
+    <p>そう感じたときは、ひとりで抱えこまずに頼ってくださいね。電話営業20年で身につけた「お客様に届く言葉」とAIの力で、note・ブログ記事、セールス文、営業トークを、あなたらしい言葉でお作りしています。</p>
+    <div class="trial">
+      <strong>はじめての方は「お試し1本」から</strong>
+      <p style="margin:0">公式LINEに <span class="kw">お試し希望</span> とひと言送ってください。<br>お話をお聞きするところから始めます。</p>
+      <div class="btns" style="justify-content:center"><a class="btn" href="https://line.me/R/ti/p/%40154yvpvs" target="_blank" rel="noopener">公式LINEを開く</a></div>
+      <span class="note">お試しは月3名様までです。</span>
+    </div>
+    <div class="sign-row"><img src="umemura.jpg" alt="" width="52" height="52"><p class="sign">梅村恵美</p></div>
+  </section>
+</div>
+
+</body>
+</html>
