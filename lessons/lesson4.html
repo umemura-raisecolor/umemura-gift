@@ -1,0 +1,244 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第4講座 SNSから相談につなげる｜梅村恵美</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#FBF7F8; --paper:#FFFFFF; --ink:#3A2A33; --muted:#7D6A74;
+  --rose:#C46A8C; --rose-soft:#F4E3EA; --stem:#5F7D63; --stem-soft:#E7EEE7; --line:#E8D9DF; --mark:#F8DCE7;
+  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.9;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-inline:18px;padding-block:0 56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:700;line-height:1.45}
+p{margin:0}
+a{color:var(--rose)}
+a:focus-visible,.btn:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;padding:0 1px}
+b{font-weight:700}
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:16px;font-size:13px}
+.topnav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+@media (max-width:520px){.topnav .note{display:none}}
+.topnav a:hover{color:var(--rose)}
+.hero{padding-block:24px 32px;display:grid;gap:14px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--stem);font-weight:700}
+.hero-no{display:flex;align-items:center;gap:12px}
+.hero-no .dot{width:44px;height:44px;border-radius:50%;background:var(--stem);color:#fff;font-family:var(--display);font-size:20px;font-weight:700;display:grid;place-items:center;flex:none}
+.hero h1{font-size:clamp(27px,7.4vw,36px)}
+.hero .lead{color:var(--muted)}
+.progress{display:flex;gap:6px;margin-top:4px}
+.progress a{flex:1;height:5px;border-radius:3px;background:var(--line)}
+.progress a.done{background:var(--stem-soft)}
+.progress a.now{background:var(--rose)}
+section{padding-block:36px 0}
+.card{background:var(--paper);border:1px solid var(--line);padding:20px 18px;display:grid;gap:12px}
+.audio h2{font-size:19px}
+.audio iframe{width:100%;height:190px;border:0;border-radius:6px;background:var(--rose-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;background:var(--rose);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.btn:hover{filter:brightness(1.06)}
+.note{font-size:12.5px;color:var(--muted);line-height:1.7}
+.purpose{background:var(--rose-soft);padding:24px 20px;display:grid;gap:12px}
+.purpose .label{font-size:12px;letter-spacing:.16em;color:var(--rose);font-weight:700}
+.purpose .qs{display:grid;gap:4px;font-family:var(--display);font-size:18px;font-weight:700;line-height:1.6}
+.how{font-size:13.5px;color:var(--muted);border-left:3px solid var(--stem);padding:2px 0 2px 12px}
+.work{padding-block:44px 0}
+.work-head{display:grid;gap:4px;margin-bottom:16px}
+.work-no{font-family:var(--display);font-size:34px;line-height:1;color:var(--rose);font-weight:700;font-variant-numeric:tabular-nums}
+.work-head h2{font-size:22px}
+.work-head .sub{font-family:var(--display);color:var(--muted);font-size:15px}
+.work .text{display:grid;gap:12px}
+.box-title{font-size:12.5px;letter-spacing:.12em;color:var(--stem);font-weight:700;margin-bottom:4px}
+.qlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.qlist li{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--rose);padding:10px 14px;font-weight:500;line-height:1.75}
+.after{color:var(--ink)}
+.memo{display:grid;gap:6px}
+.memo label{font-size:12.5px;color:var(--muted);font-weight:700}
+textarea{width:100%;min-height:110px;resize:vertical;font:inherit;font-size:15px;line-height:1.8;color:var(--ink);background:var(--paper);border:1px dashed var(--line);border-radius:4px;padding:10px 12px}
+textarea:focus{border-style:solid;border-color:var(--rose)}
+.score{display:flex;align-items:center;gap:8px;font-size:14px}
+.score input{width:72px;font:inherit;font-size:16px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);text-align:center}
+.choices{background:var(--paper);border:1px solid var(--line);padding:16px;display:grid;gap:10px}
+.choices .ttl{font-family:var(--display);font-weight:700;font-size:16px;line-height:1.6}
+.choices .hint{font-size:12.5px;color:var(--muted)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:460px){.chips{grid-template-columns:1fr}}
+.chip{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:6px;padding:9px 11px;cursor:pointer;min-width:0}
+.chip input{accent-color:var(--rose);margin-top:6px;flex:none;width:16px;height:16px}
+.chip span{display:grid;line-height:1.55}
+.chip small{color:var(--muted);font-size:12px}
+.chip:has(input:checked){border-color:var(--rose);background:var(--rose-soft)}
+.deep{background:var(--stem-soft);padding:16px;display:grid;gap:8px}
+.deep ul{margin:0;padding-left:1.2em;display:grid;gap:6px;font-weight:500}
+.route{display:grid;gap:6px;counter-reset:r}
+.route div{background:var(--paper);border:1px solid var(--line);padding:8px 12px;font-weight:700;font-size:14.5px;text-align:center}
+.route i{display:block;text-align:center;color:var(--rose);font-style:normal;line-height:1}
+.checkin{background:var(--paper);border:1px solid var(--line);padding:24px 18px;display:grid;gap:16px}
+.checkin h2{font-size:21px}
+.message{padding:32px 20px;background:var(--rose-soft);display:grid;gap:12px;border-radius:2px}
+.message .label{font-family:var(--display);font-size:13px;letter-spacing:.2em;color:var(--rose);font-weight:700}
+.message p{font-family:var(--display);font-size:16px;line-height:2}
+.sign-row{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.sign-row img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 22%}
+.sign{font-family:var(--display);font-size:17px}
+.mat{display:grid;gap:10px}
+.mat .ttl{font-family:var(--display);font-size:18px;font-weight:700}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pager a{background:var(--paper);border:1px solid var(--line);padding:12px 14px;text-decoration:none;color:var(--ink);display:grid;gap:2px;min-width:0}
+.pager a small{color:var(--muted);font-size:12px}
+.pager a b{font-family:var(--display);font-size:15px;line-height:1.5}
+.pager .next{text-align:right;grid-column:2}
+.pager a:hover{border-color:var(--rose)}
+.saved{font-size:12px;color:var(--stem);min-height:1.2em;text-align:right}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.topnav,.audio,.pager,.btns{display:none} textarea{border:1px solid #ccc}}
+</style></head><body><div class="wrap">
+<nav class="topnav"><a href="../">← 講座一覧へ戻る</a><span class="note">まだ形にならない「これから」を整える講座</span></nav>
+<header class="hero">
+<div class="hero-no"><div class="dot">4</div><div class="eyebrow">第4講座｜SNS導線・プロフィール設計</div></div>
+<h1>SNSから相談につなげる</h1><p class="lead">発信を“集客”につなげる</p>
+<div class="progress"><a href="lesson1.html" class="done" aria-label="第1講座"></a><a href="lesson2.html" class="done" aria-label="第2講座"></a><a href="lesson3.html" class="done" aria-label="第3講座"></a><a href="lesson4.html" class="now" aria-label="第4講座"></a><a href="lesson5.html" class="" aria-label="第5講座"></a><a href="lesson6.html" class="" aria-label="第6講座"></a></div></header>
+<section><div class="card audio">
+<h2>まずは講座の音声を聴く</h2>
+<iframe src="https://stand.fm/embed/episodes/6a19963451aa3314ca57d470" title="第4講座の音声" loading="lazy" allow="autoplay"></iframe>
+<div class="btns"><a class="btn" href="https://stand.fm/episodes/6a19963451aa3314ca57d470" target="_blank" rel="noopener">stand.fmで聴く</a></div>
+<p class="note">再生できないときは「stand.fmで聴く」から開いてください。はじめて聴くときだけ、stand.fmへのログイン（無料の会員登録）が必要です。</p>
+</div></section>
+<section><div class="purpose"><div class="label">この講座の目的</div>
+<div class="qs"><span>「なぜ私の発信は、集客に繋がらないのか？」</span><span>「どこを直せば、見込み客が自然に集まる流れが作れるのか？」</span></div>
+<p>「毎日発信しているのに申し込みが入らない」「認知はされるのに公式LINEやメルマガへの登録が増えない」という場合、その原因は発信内容ではなく、アカウント全体の“導線設計”にあります。</p>
+<p>この講座では、SNSをただの「日記」や「ノウハウ置き場」で終わらせず、自然とファンが集まり成約へ繋がる一連の流れ（導線）を設計します。プロフィール、ハイライト、ストーリーズ、リールの役割を明確に言語化し、<b>「無理に売り込む発信」から「理想のお客様が自然と集まり、次のステップへ進みたくなるアカウント」へ変えていくための土台</b>を整えます。</p>
+</div>
+<p class="how" style="margin-top:16px">音声を聴きながら、各ワークの問いに答えてみてください。書き込んだ内容は、このスマホ・パソコンのブラウザにだけ保存されます（ほかの人には見えません）。</p>
+</section>
+<section class="work" id="work1"><div class="work-head"><div class="work-no">01</div>
+<h2>現在地を知る</h2><div class="sub">—— 私のアカウントの現在地</div></div>
+<div class="text">
+<p>まずは「今の自分のSNSアカウント」を顧客目線で客観的に、ありのままに観察することからスタートします。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>今の自分のプロフィールを初めて見た人は、何をやっている人だと感じる？</li><li>「現在のフォロワーや閲覧数」と「実際の集客や問い合わせ」のギャップ</li><li>アカウントを運用する中で、一番「機能していない、流れが止まっている」と感じる部分</li><li>今の自分のSNS導線に対する自信（10点満点中、直感で何点？）</li></ul></div>
+<label class="score">自信の点数：<input type="number" min="0" max="10" inputmode="numeric" data-k="w1-score" aria-label="10点満点中の点数"> 点 / 10点</label>
+<div class="memo"><label for="w1-memo">書き込みメモ</label><textarea id="w1-memo" data-k="w1-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work2"><div class="work-head"><div class="work-no">02</div>
+<h2>プロフィール改善</h2><div class="sub">—— 5秒で選ばれる看板づくり</div></div>
+<div class="text">
+<p>アカウントに訪れた人が最初に目にする「プロフィール」を、一瞬で「私のためのアカウントだ」と感じてもらえる文章へブラッシュアップします。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>誰の、どんな悩みを解決する専門家なのか（ひと目でわかる肩書き）</li><li>あなたがこれまでに生み出してきた実績や、説得力を持たせる背景・経験</li><li>このアカウントをフォローすることで、読者が得られる具体的なメリット</li><li>プロフィールを読んだ人に、最終的にタップしてほしい「リンク（公式LINE、メルマガ等）」</li><li>他の発信者の中に埋もれない、あなただけの「個性のエッセンス」</li></ul></div>
+<div class="deep"><div class="box-title">深掘りクエスチョン</div><ul><li>「私のプロフィールを読んだ人は、迷わず次の行動（リンクを叩くなど）ができる？」</li><li>「自分が思わずフォローしてしまった他人のプロフィールには、何が書いてあった？」</li><li>「一言でターゲットを惹きつける、あなた独自のキーワードは何？」</li></ul></div>
+<div class="memo"><label for="w2-memo">書き込みメモ</label><textarea id="w2-memo" data-k="w2-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work3"><div class="work-head"><div class="work-no">03</div>
+<h2>ハイライト設計</h2><div class="sub">—— 信頼を構築するストック資産</div></div>
+<div class="text">
+<p>24時間で消えてしまうストーリーズを、24時間働く自動の営業マン（ハイライト）として整理・設計します。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>初めて訪れた人に、まず最初に見てほしい「自己紹介・ストーリー」の内容</li><li>お客様の声を預かり、あなたのサービスの確かな証拠を見せる「お客様の実績・感想」</li><li>あなたが提供しているメニューやセッションへの「想い・サービス案内」</li><li>あなたの世界観や日常、人間性を感じてもらうための「プライベート・日常のこだわり」</li><li>ハイライトの表紙（カバー画像）に採用したい、あなたのアカウントのブランドカラー</li></ul></div>
+<div class="choices"><div class="ttl">ハイライトに必要な要素（今すぐ整えたいもの）</div><div class="hint">直感で、大切なものを3つ選んでみましょう</div><div class="chips">
+<label class="chip"><input type="checkbox" data-k="w3-c0"><span><b>自己紹介・理念</b><small>「はじめまして」「私がこの活動をする理由」</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w3-c1"><span><b>お客様の声・実績</b><small>「受講生の変化」「リアルな感想」</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w3-c2"><span><b>無料プレゼント・案内</b><small>「LINE登録特典」「限定イベント」</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w3-c3"><span><b>サービスメニュー・募集</b><small>「現在募集中のセッション」「詳細はこちら」</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w3-c4"><span><b>ノウハウ・お役立ちまとめ</b><small>「過去の有益配信」「Q&amp;A」</small></span></label>
+</div><div class="memo"><label for="w3-cother">その他・選んだ理由</label><textarea id="w3-cother" data-k="w3-cother" placeholder="ほかに大切にしたいもの、選んだ理由など"></textarea></div></div>
+<div class="memo"><label for="w3-memo">書き込みメモ</label><textarea id="w3-memo" data-k="w3-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work4"><div class="work-head"><div class="work-no">04</div>
+<h2>ストーリーズ活用</h2><div class="sub">—— 日常から“濃いファン”を育てる</div></div>
+<div class="text">
+<p>日常の裏側やあなたの本音をリアルタイムで開示し、フォロワーとの距離を一気に縮める関係構築の場を設計します。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>フィード投稿やリールでは見せない、あなたの「日常の1コマやリアルな裏側」</li><li>フォロワーが気軽にリアクション（スタンプやアンケートなど）しやすいテーマ</li><li>あなたが仕事や人生に対して持っている、熱い想いやリアルタイムの気づき（本音の開示）</li><li>ストーリーズから次のステップ（公式LINEやリンク誘導）へ進んでもらうための心理的フック</li><li>理想のお客様とコミュニケーションを取るために、明日から取り入れたい双方向のアクション</li></ul></div>
+<div class="deep"><div class="box-title">深掘りクエスチョン</div><ul><li>「最近、フォロワーと直接メッセージ（DM）のやり取りはできている？」</li><li>「無理に良く見せようとせず、等身大のあなたをストーリーズに出せている？」</li><li>「どんな日常の投稿に、フォロワーは親近感を持ってくれている？」</li></ul></div>
+<div class="memo"><label for="w4-memo">書き込みメモ</label><textarea id="w4-memo" data-k="w4-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work5"><div class="work-head"><div class="work-no">05</div>
+<h2>リール導線設計</h2><div class="sub">—— “認知”から“ファン化”へ繋ぐ</div></div>
+<div class="text">
+<p>ショート動画（リール）の拡散力を活かして、まだ見ぬ理想のお客様に出会い、そのままアカウントへ定着させる流れを作ります。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>リール動画の最初の1〜3秒で、ターゲットの指を止めるための「インパクトのあるタイトル」</li><li>動画の最後に必ず入れる「プロフィールの閲覧」や「フォロー」を促すアクション（CTA）</li><li>リールからプロフィールに飛んできた人が、違和感なく納得できるアカウントの統一感</li><li>ノウハウだけで終わらせず、「続きはキャプション（本文）で！」と読ませる文章誘導</li><li>あなたが心地よく、かつ継続的に撮影・編集できるリールの動画スタイル（顔出し、VLOG風など）</li></ul></div>
+<div class="deep"><div class="box-title">問いかけ</div><ul><li>「リールが再生されるだけで終わらず、プロフィールへの流入に繋がっていますか？」</li><li>「ただバズる（再生数が伸びる）ためではなく、理想のお客様に刺さる内容になっている？」</li><li>「リール動画の中で、あなたのキャラクターや強みはどれくらい伝わっている？」</li></ul></div>
+<div class="memo"><label for="w5-memo">書き込みメモ</label><textarea id="w5-memo" data-k="w5-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work6"><div class="work-head"><div class="work-no">06</div>
+<h2>見込み客が自然に集まる流れづくり</h2><div class="sub">—— 全体導線の仕組み化</div></div>
+<div class="text">
+<p>リール、プロフィール、ハイライト、ストーリーズを一本の線で繋ぎ、お客様が迷わずに集まる仕組みを完成させます。</p>
+<div>
+<div class="box-title">全体導線設計ワーク</div>
+<ul class="qlist"><li>【入り口（認知）】新しいお客様は、どの投稿（リール・フィード）からあなたを見つける？</li><li>【中に入ってからの動き（興味）】プロフィールに来たお客様は、まずどこをタップする？</li><li>【教育・ファン化】お客様の「もっと知りたい！」を刺激し、信頼を深めるための仕組みは？</li><li>【次のステップ（出口）】公式LINEやメルマガに登録したくなる、最大の動機（プレゼント等）は？</li><li>【ゴール（成約）】登録してくれたお客様へ、どのような流れで本命メニューをご案内する？</li></ul></div>
+<div><div class="box-title">流れを確認する</div><div class="route"><div>リールで出会う</div><i>↓</i><div>プロフィールを見る</div><i>↓</i><div>ハイライトで信頼する</div><i>↓</i><div>公式LINEへ登録する</div></div></div>
+<p><b>この流れの中で、今一番「お客様が途中で離脱してしまっている」と感じるボトルネックはどこですか？</b></p>
+<div class="memo"><label for="w6-memo">書き込みメモ</label><textarea id="w6-memo" data-k="w6-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work7"><div class="work-head"><div class="work-no">07</div>
+<h2>発信の軸を定める</h2><div class="sub">—— “迷わせない動線”を作る</div></div>
+<div class="text">
+<p>最後に、今後のSNS導線運用と集客のルールを総まとめします。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>あなたのアカウントに訪れた理想のお客様に、絶対に持って帰ってほしい「一番の感情」</li><li>集客をスムーズにするために、直近でブラッシュアップする「プロフィールの1文」</li><li>今後、完全に手放したい「ただなんとなく投稿しているだけの発信」</li><li>理想のお客様が、あなたに直接相談したくなるような「安心感のある環境づくり」</li><li>自分が心地よく、かつ確実に成果に繋げられる「集客の仕組み」</li></ul></div>
+<div class="choices"><div class="ttl">あなたがSNS全体で醸し出したいアカウントの雰囲気</div><div class="hint">直感で、大切なものを3つ選んでみましょう</div><div class="chips">
+<label class="chip"><input type="checkbox" data-k="w7-c0"><span><b>プロフェッショナル・信頼感</b><small>この人に任せれば安心だと思わせる</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c1"><span><b>アットホーム・親しみやすさ</b><small>気軽に相談しやすい、距離が近い</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c2"><span><b>洗練・憧れ・世界観系</b><small>こんなライフスタイルを送りたいと思わせる</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c3"><span><b>エネルギー・モチベーター系</b><small>見ているだけで元気が出る、背中を押される</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c4"><span><b>完全お悩み解決・有益系</b><small>教科書のように何度も見返したくなる</small></span></label>
+</div><div class="memo"><label for="w7-cother">その他・選んだ理由</label><textarea id="w7-cother" data-k="w7-cother" placeholder="ほかに大切にしたいもの、選んだ理由など"></textarea></div></div>
+<div class="memo"><label for="w7-memo">書き込みメモ</label><textarea id="w7-memo" data-k="w7-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section><div class="checkin"><h2>ワークの終わりに<br>未来へのチェックイン</h2>
+<div class="memo"><label for="ci0">今日、アカウントの導線を整理して見えてきた「私の最大の改善ポイント」</label><textarea id="ci0" data-k="ci0" placeholder=""></textarea></div>
+<div class="memo"><label for="ci1">これからSNS上で、理想のお客様に向けて一番に提供していきたい「価値と体験」</label><textarea id="ci1" data-k="ci1" placeholder=""></textarea></div>
+<div class="memo"><label for="ci2">あなたのプロフィールが整うことで、救われることになる「たった一人の見込み客の姿」</label><textarea id="ci2" data-k="ci2" placeholder=""></textarea></div>
+<div class="memo"><label for="ci3">今後、優先的に作り込んでいきたい「導線（ハイライトや公式LINE特典など）」</label><textarea id="ci3" data-k="ci3" placeholder=""></textarea></div>
+<div class="memo"><label for="ci4">明日から始められる、アカウントを生まれ変わらせるための“小さな一歩”</label><textarea id="ci4" data-k="ci4" placeholder=""></textarea></div>
+<div class="saved" id="saved" aria-live="polite"></div></div></section>
+<section><div class="message"><div class="label">Message for you</div>
+<p>SNS導線設計は、「お客様をコントロールして集客するためのテクニック」ではありません。</p>
+<p>あなたの発信を必要としている人が、迷子にならずにあなたのもとへ辿り着けるようにするための“優しい案内板”です。</p>
+<p>数字の増減に一喜一憂する必要はありません。大切なのは、「どうすれば目の前の人が安心して次のステップに進めるか」を、顧客の目線に立って徹底的に整えてあげること。そこから、無理に集客しなくても自然と選ばれる<b>“愛されるアカウント”</b>が育っていきます。</p>
+<p>ここまで、ご自身のアカウントと真剣に向き合ってくださり、本当にお疲れ様でした。</p>
+<div class="sign-row"><img src="../umemura.jpg" alt="" width="48" height="48"><span class="sign">梅村恵美</span></div></div></section>
+<section><div class="card mat"><div class="box-title">この講座の資料</div>
+<div class="ttl">DM集客の仕組み化</div><p class="note">音声とワークのあとに、資料で手を動かすと理解が深まります。</p>
+<div class="btns"><a class="btn" href="https://walnut-baron-07e.notion.site/DM-a1b253db410b83e29c80013f1f0497e3" target="_blank" rel="noopener">資料を開く</a></div></div></section>
+<section><nav class="pager">
+<a href="lesson3.html"><small>← 前の講座</small><b>第3講座 発信の軸を作る</b></a>
+<a class="next" href="lesson5.html"><small>次の講座 →</small><b>第5講座 売れる商品を作る</b></a>
+</nav></section>
+</div><script>
+(function(){
+  var KEY='umemura-lesson-4';
+  var data={};
+  try{data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){data={}}
+  var fields=document.querySelectorAll('[data-k]');
+  fields.forEach(function(el){
+    var k=el.getAttribute('data-k');
+    if(el.type==='checkbox'){el.checked=!!data[k]}else if(data[k]!=null){el.value=data[k]}
+    el.addEventListener(el.type==='checkbox'?'change':'input',function(){
+      data[k]=el.type==='checkbox'?el.checked:el.value;
+      try{localStorage.setItem(KEY,JSON.stringify(data));
+        var s=document.getElementById('saved');if(s){s.textContent='この端末に保存しました';clearTimeout(window.__t);window.__t=setTimeout(function(){s.textContent=''},1800)}
+      }catch(e){}
+    });
+  });
+})();
+</script></body></html>

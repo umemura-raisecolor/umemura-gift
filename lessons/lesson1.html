@@ -1,0 +1,252 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第1講座 自分を知る｜梅村恵美</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#FBF7F8; --paper:#FFFFFF; --ink:#3A2A33; --muted:#7D6A74;
+  --rose:#C46A8C; --rose-soft:#F4E3EA; --stem:#5F7D63; --stem-soft:#E7EEE7; --line:#E8D9DF; --mark:#F8DCE7;
+  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.9;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-inline:18px;padding-block:0 56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:700;line-height:1.45}
+p{margin:0}
+a{color:var(--rose)}
+a:focus-visible,.btn:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;padding:0 1px}
+b{font-weight:700}
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:16px;font-size:13px}
+.topnav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+@media (max-width:520px){.topnav .note{display:none}}
+.topnav a:hover{color:var(--rose)}
+.hero{padding-block:24px 32px;display:grid;gap:14px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--stem);font-weight:700}
+.hero-no{display:flex;align-items:center;gap:12px}
+.hero-no .dot{width:44px;height:44px;border-radius:50%;background:var(--stem);color:#fff;font-family:var(--display);font-size:20px;font-weight:700;display:grid;place-items:center;flex:none}
+.hero h1{font-size:clamp(27px,7.4vw,36px)}
+.hero .lead{color:var(--muted)}
+.progress{display:flex;gap:6px;margin-top:4px}
+.progress a{flex:1;height:5px;border-radius:3px;background:var(--line)}
+.progress a.done{background:var(--stem-soft)}
+.progress a.now{background:var(--rose)}
+section{padding-block:36px 0}
+.card{background:var(--paper);border:1px solid var(--line);padding:20px 18px;display:grid;gap:12px}
+.audio h2{font-size:19px}
+.audio iframe{width:100%;height:190px;border:0;border-radius:6px;background:var(--rose-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;background:var(--rose);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.btn:hover{filter:brightness(1.06)}
+.note{font-size:12.5px;color:var(--muted);line-height:1.7}
+.purpose{background:var(--rose-soft);padding:24px 20px;display:grid;gap:12px}
+.purpose .label{font-size:12px;letter-spacing:.16em;color:var(--rose);font-weight:700}
+.purpose .qs{display:grid;gap:4px;font-family:var(--display);font-size:18px;font-weight:700;line-height:1.6}
+.how{font-size:13.5px;color:var(--muted);border-left:3px solid var(--stem);padding:2px 0 2px 12px}
+.work{padding-block:44px 0}
+.work-head{display:grid;gap:4px;margin-bottom:16px}
+.work-no{font-family:var(--display);font-size:34px;line-height:1;color:var(--rose);font-weight:700;font-variant-numeric:tabular-nums}
+.work-head h2{font-size:22px}
+.work-head .sub{font-family:var(--display);color:var(--muted);font-size:15px}
+.work .text{display:grid;gap:12px}
+.box-title{font-size:12.5px;letter-spacing:.12em;color:var(--stem);font-weight:700;margin-bottom:4px}
+.qlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.qlist li{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--rose);padding:10px 14px;font-weight:500;line-height:1.75}
+.after{color:var(--ink)}
+.memo{display:grid;gap:6px}
+.memo label{font-size:12.5px;color:var(--muted);font-weight:700}
+textarea{width:100%;min-height:110px;resize:vertical;font:inherit;font-size:15px;line-height:1.8;color:var(--ink);background:var(--paper);border:1px dashed var(--line);border-radius:4px;padding:10px 12px}
+textarea:focus{border-style:solid;border-color:var(--rose)}
+.score{display:flex;align-items:center;gap:8px;font-size:14px}
+.score input{width:72px;font:inherit;font-size:16px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);text-align:center}
+.choices{background:var(--paper);border:1px solid var(--line);padding:16px;display:grid;gap:10px}
+.choices .ttl{font-family:var(--display);font-weight:700;font-size:16px;line-height:1.6}
+.choices .hint{font-size:12.5px;color:var(--muted)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:460px){.chips{grid-template-columns:1fr}}
+.chip{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:6px;padding:9px 11px;cursor:pointer;min-width:0}
+.chip input{accent-color:var(--rose);margin-top:6px;flex:none;width:16px;height:16px}
+.chip span{display:grid;line-height:1.55}
+.chip small{color:var(--muted);font-size:12px}
+.chip:has(input:checked){border-color:var(--rose);background:var(--rose-soft)}
+.deep{background:var(--stem-soft);padding:16px;display:grid;gap:8px}
+.deep ul{margin:0;padding-left:1.2em;display:grid;gap:6px;font-weight:500}
+.route{display:grid;gap:6px;counter-reset:r}
+.route div{background:var(--paper);border:1px solid var(--line);padding:8px 12px;font-weight:700;font-size:14.5px;text-align:center}
+.route i{display:block;text-align:center;color:var(--rose);font-style:normal;line-height:1}
+.checkin{background:var(--paper);border:1px solid var(--line);padding:24px 18px;display:grid;gap:16px}
+.checkin h2{font-size:21px}
+.message{padding:32px 20px;background:var(--rose-soft);display:grid;gap:12px;border-radius:2px}
+.message .label{font-family:var(--display);font-size:13px;letter-spacing:.2em;color:var(--rose);font-weight:700}
+.message p{font-family:var(--display);font-size:16px;line-height:2}
+.sign-row{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.sign-row img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 22%}
+.sign{font-family:var(--display);font-size:17px}
+.mat{display:grid;gap:10px}
+.mat .ttl{font-family:var(--display);font-size:18px;font-weight:700}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pager a{background:var(--paper);border:1px solid var(--line);padding:12px 14px;text-decoration:none;color:var(--ink);display:grid;gap:2px;min-width:0}
+.pager a small{color:var(--muted);font-size:12px}
+.pager a b{font-family:var(--display);font-size:15px;line-height:1.5}
+.pager .next{text-align:right;grid-column:2}
+.pager a:hover{border-color:var(--rose)}
+.saved{font-size:12px;color:var(--stem);min-height:1.2em;text-align:right}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.topnav,.audio,.pager,.btns{display:none} textarea{border:1px solid #ccc}}
+</style></head><body><div class="wrap">
+<nav class="topnav"><a href="../">← 講座一覧へ戻る</a><span class="note">まだ形にならない「これから」を整える講座</span></nav>
+<header class="hero">
+<div class="hero-no"><div class="dot">1</div><div class="eyebrow">第1講座｜自分理解・思考整理</div></div>
+<h1>自分を知る</h1><p class="lead">私が何者なのかを知る</p>
+<div class="progress"><a href="lesson1.html" class="now" aria-label="第1講座"></a><a href="lesson2.html" class="" aria-label="第2講座"></a><a href="lesson3.html" class="" aria-label="第3講座"></a><a href="lesson4.html" class="" aria-label="第4講座"></a><a href="lesson5.html" class="" aria-label="第5講座"></a><a href="lesson6.html" class="" aria-label="第6講座"></a></div></header>
+<section><div class="card audio">
+<h2>まずは講座の音声を聴く</h2>
+<iframe src="https://stand.fm/embed/episodes/6a1547c4f75fbb8a5892cfa6" title="第1講座の音声" loading="lazy" allow="autoplay"></iframe>
+<div class="btns"><a class="btn" href="https://stand.fm/episodes/6a1547c4f75fbb8a5892cfa6" target="_blank" rel="noopener">stand.fmで聴く</a></div>
+<p class="note">再生できないときは「stand.fmで聴く」から開いてください。はじめて聴くときだけ、stand.fmへのログイン（無料の会員登録）が必要です。</p>
+</div></section>
+<section><div class="purpose"><div class="label">この講座の目的</div>
+<div class="qs"><span>「私は本当は、どう生きたいのか？」</span><span>「なぜ今、苦しさや違和感を感じているのか？」</span></div>
+<p>日々の忙しさやノウハウの波に埋もれてしまった「あなたの本音」を一歩引いて見つめ直す時間です。</p>
+<p>過去の経験、思考のクセ、眠っている強み、理想のライフスタイルを丁寧に言語化し、<b>“まだ言葉になっていない違和感”をこれからの確信へと変えていくための土台</b>を整えます。</p>
+</div>
+<p class="how" style="margin-top:16px">音声を聴きながら、各ワークの問いに答えてみてください。書き込んだ内容は、このスマホ・パソコンのブラウザにだけ保存されます（ほかの人には見えません）。</p>
+</section>
+<section class="work" id="work1"><div class="work-head"><div class="work-no">01</div>
+<h2>現在地を知る</h2><div class="sub">—— 私は何者なのか？</div></div>
+<div class="text">
+<p>理想の未来やこれからの方向性を考える前に、まず必要なのは「<mark>今、自分がどんな状態にいるのか」を把握する</mark>ことです。</p>
+<p>私たちは日々、仕事・家庭・人間関係など、さまざまな役割や期待に応えながら過ごしています。その中で、自分の本音や感情を後回しにすることも少なくありません。</p>
+<p>しかし、自分の内側で起きている違和感や感情に気づかないまま進み続けると、「本当に望む人生」と少しずつズレが生まれていくことがあります。</p>
+<p>このワークでは、評価や正解を探すのではなく、“今の自分”を客観的に観察し、現在地を整理することを目的とします。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>今の自分を一言で表すと？</li><li>周囲から見られている自分とのギャップは？</li><li>最近、どんな感情を抱くことが多いか？</li><li>今の人生の満足度は何点か？</li></ul></div>
+<p class="after">言葉にして整理することで、自分でも気づいていなかった本音や、本当に大切にしたい価値観が少しずつ見えてきます。</p>
+<div class="memo"><label for="w1-memo">書き込みメモ</label><textarea id="w1-memo" data-k="w1-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work2"><div class="work-head"><div class="work-no">02</div>
+<h2>軌跡をたどる</h2><div class="sub">—— 過去の経験と転機の整理</div></div>
+<div class="text">
+<p>人の価値観や強みは、突然つくられるものではありません。</p>
+<p>「いつ・どこで・誰と・何を経験し、どう感じたのか」という人生の積み重ねによって形づくられていきます。</p>
+<p>このワークでは、幼少期から現在までの経験を振り返り、<mark>自分の思考や行動パターンの原点を整理</mark>していきます。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>幼少期に形成された価値観や記憶</li><li>学生時代の葛藤や人間関係</li><li>社会人以降の挑戦・挫折・転機</li><li>今の自分に影響を与えている出来事</li></ul></div>
+<p class="after">過去を振り返ることで、無意識に繰り返している選択や、本来大切にしたい想いが見えてきます。</p>
+<div class="memo"><label for="w2-memo">書き込みメモ</label><textarea id="w2-memo" data-k="w2-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work3"><div class="work-head"><div class="work-no">03</div>
+<h2>違和感を紐解く</h2><div class="sub">—— なぜ今、苦しいのか？</div></div>
+<div class="text">
+<p>私たちは日常の中で、「なんとなく苦しい」「頑張っているのに満たされない」といった違和感を感じることがあります。</p>
+<p>しかし、多くの場合、その感情を深く考える前に、忙しさや責任感によって無意識に押し込めてしまいます。</p>
+<p>このワークでは、<mark>“今の苦しさはどこから来ているのか”を整理</mark>し、自分の内側で起きている状態を客観的に見つめていきます。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>何に焦りを感じているのか</li><li>何を我慢しているのか</li><li>誰の期待を背負っているのか</li><li>本当は何を感じているのか</li></ul></div>
+<p class="after">違和感は「ダメなサイン」ではなく、自分の本音や価値観を見直すための重要なメッセージです。</p>
+<div class="memo"><label for="w3-memo">書き込みメモ</label><textarea id="w3-memo" data-k="w3-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work4"><div class="work-head"><div class="work-no">04</div>
+<h2>資質を見つける</h2><div class="sub">—— 強みの再定義</div></div>
+<div class="text">
+<p>私たちは、自分にとって“普通にできること”を過小評価しやすい傾向があります。</p>
+<p>しかし、他者から見れば、その自然にできる行動や在り方こそが「信頼」や「価値」として映っている場合があります。</p>
+<p>このワークでは、過去の経験や他者との関わりを振り返りながら、自分では気づきにくい“本来の資質”を整理していきます。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>周囲からよく言われる魅力や印象</li><li>無意識に続けられること・自然にできること</li><li>人から感謝された経験や相談されやすい内容</li></ul></div>
+<p class="after"><mark>強みとは、特別な能力ではなく、「自然に発揮している価値」に気づくことから始まります。</mark></p>
+<div class="memo"><label for="w4-memo">書き込みメモ</label><textarea id="w4-memo" data-k="w4-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work5"><div class="work-head"><div class="work-no">05</div>
+<h2>心を解放する</h2><div class="sub">—— 本音のサルベージ</div></div>
+<div class="text">
+<p>私たちは日常の中で、「こうあるべき」「期待に応えなければ」という思考を優先するうちに、本来の欲求や感情を無意識に抑え込んでしまいます。</p>
+<p>このワークでは、“起業家としての正しさ”ではなく、「一人の人間として、本当は何を望んでいるのか」を整理していきます。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>本当はやりたいこと</li><li>本当はもう手放したいこと</li><li>実は怖くて避けていること</li><li>心が望む理想の未来</li><li>もし絶対に失敗しないなら、何を選ぶか</li></ul></div>
+<p class="after">制限を外して考えることで、思考ではなく<mark>“本音”を起点にした人生の方向性</mark>が見えてきます。</p>
+<div class="memo"><label for="w5-memo">書き込みメモ</label><textarea id="w5-memo" data-k="w5-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work6"><div class="work-head"><div class="work-no">06</div>
+<h2>ライフスタイルを描く</h2><div class="sub">—— 理想の働き方</div></div>
+<div class="text">
+<p>ビジネスは「売上をつくること」だけが目的ではなく、“どんな人生を送りたいか”を実現するための手段でもあります。</p>
+<p>このワークでは、<mark>「いつ・どこで・誰と・どのように働きたいのか」</mark>を整理し、自分にとって無理のない理想のライフスタイルを明確にしていきます。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>理想の1日は、どんな時間の使い方をしているか？</li><li>どんな環境・働き方なら心地よく続けられるか？</li><li>誰と関わり、どんな価値を届けたいか？</li><li>理想の収入と、譲れない価値観は何か？</li></ul></div>
+<p class="after">理想を言語化することで、「今の働き方とのズレ」が見え、これから整えるべき方向性が明確になります。</p>
+<div class="memo"><label for="w6-memo">書き込みメモ</label><textarea id="w6-memo" data-k="w6-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section class="work" id="work7"><div class="work-head"><div class="work-no">07</div>
+<h2>軸を定める</h2><div class="sub">—— 自分らしさの輪郭</div></div>
+<div class="text">
+<p>人生や仕事で迷いが生まれる時、多くは「自分に合う基準」が曖昧になっています。</p>
+<p>このワークでは、“何をしている時に自分らしくいられるのか”を整理し、自分の判断軸を明確にしていきます。</p>
+<p>感情・思考・身体反応を客観的に観察することで、無理をしている状態や、本来の自分に近い環境が見えやすくなります。</p>
+<div>
+<div class="box-title">考えてみる問い</div>
+<ul class="qlist"><li>自分らしさを感じる瞬間</li><li>違和感や無理を感じる場面</li><li>心や身体に現れる危険サイン</li><li>自然体でいられる人・環境</li></ul></div>
+<p class="after">軸が明確になることで、<mark>選択や人間関係に振り回されにくく</mark>なり、自分に合った生き方を選びやすくなります。</p>
+<div class="choices"><div class="ttl">あなたを動かす「美意識・コア価値観」</div><div class="hint">直感で、大切なものを3つ選んでみましょう</div><div class="chips">
+<label class="chip"><input type="checkbox" data-k="w7-c0"><span><b>安心</b><small>ホッとする環境、ブレない土台</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c1"><span><b>自由</b><small>時間や場所に縛られない、選択権がある</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c2"><span><b>挑戦</b><small>常に新しい世界へ一歩踏み出す</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c3"><span><b>成長</b><small>学びを深め、昨日の自分を超えていく</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c4"><span><b>愛情</b><small>目の前の人を大切にする、深くつながる</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c5"><span><b>調和</b><small>みんなで心地よく、全体のバランスを重んじる</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c6"><span><b>楽しさ</b><small>ワクワクする、ユーモアを忘れない</small></span></label>
+<label class="chip"><input type="checkbox" data-k="w7-c7"><span><b>豊かさ</b><small>心も経済も循環し、満たされている</small></span></label>
+</div><div class="memo"><label for="w7-cother">その他・選んだ理由</label><textarea id="w7-cother" data-k="w7-cother" placeholder="ほかに大切にしたいもの、選んだ理由など"></textarea></div></div>
+<div class="memo"><label for="w7-memo">書き込みメモ</label><textarea id="w7-memo" data-k="w7-memo" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</div></section>
+<section><div class="checkin"><h2>ワークの終わりに<br>未来へのチェックイン</h2>
+<div class="memo"><label for="ci0">今日、じっくり自分と向き合って見えてきた「新しい発見」</label><textarea id="ci0" data-k="ci0" placeholder=""></textarea></div>
+<div class="memo"><label for="ci1">今の自分にいちばん「与えてあげたいもの・必要な言葉」</label><textarea id="ci1" data-k="ci1" placeholder=""></textarea></div>
+<div class="memo"><label for="ci2">明日から、ほんの少しだけ変えてみたい「小さな一歩」</label><textarea id="ci2" data-k="ci2" placeholder=""></textarea></div>
+<div class="saved" id="saved" aria-live="polite"></div></div></section>
+<section><div class="message"><div class="label">Message for you</div>
+<p>今感じているその違和感は、「ダメなサイン」では決してありません。</p>
+<p>むしろ、“本来のあなたに戻るための、大切な道標”です。</p>
+<p>世間が言う正解を探しに行くのは、もうおしまい。</p>
+<p>まずは「本当はどう感じているのか」を、あなたが一番の味方になって丁寧に拾い上げてあげること。そこから、<b>あなたにしか語れない“唯一無二の言葉”</b>が紡がれていきます。</p>
+<p>じっくり時間をかけた自分へのギフト、お疲れ様でした。</p>
+<div class="sign-row"><img src="../umemura.jpg" alt="" width="48" height="48"><span class="sign">梅村恵美</span></div></div></section>
+<section><div class="card mat"><div class="box-title">この講座の資料</div>
+<div class="ttl">商品発掘ワーク</div><p class="note">音声とワークのあとに、資料で手を動かすと理解が深まります。</p>
+<div class="btns"><a class="btn" href="https://walnut-baron-07e.notion.site/377253db410b804189acc97aa019e351" target="_blank" rel="noopener">資料を開く</a></div></div></section>
+<section><nav class="pager">
+<a class="next" href="lesson2.html"><small>次の講座 →</small><b>第2講座 売れるコンセプトを作る</b></a>
+</nav></section>
+</div><script>
+(function(){
+  var KEY='umemura-lesson-1';
+  var data={};
+  try{data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){data={}}
+  var fields=document.querySelectorAll('[data-k]');
+  fields.forEach(function(el){
+    var k=el.getAttribute('data-k');
+    if(el.type==='checkbox'){el.checked=!!data[k]}else if(data[k]!=null){el.value=data[k]}
+    el.addEventListener(el.type==='checkbox'?'change':'input',function(){
+      data[k]=el.type==='checkbox'?el.checked:el.value;
+      try{localStorage.setItem(KEY,JSON.stringify(data));
+        var s=document.getElementById('saved');if(s){s.textContent='この端末に保存しました';clearTimeout(window.__t);window.__t=setTimeout(function(){s.textContent=''},1800)}
+      }catch(e){}
+    });
+  });
+})();
+</script></body></html>
