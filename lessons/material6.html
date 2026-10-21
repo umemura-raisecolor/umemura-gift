@@ -15,6 +15,44 @@
 .hero-who .nm b{font-size:17px;color:#fff;font-weight:800}
 .hero-who .nm span{font-size:12.5px;color:#c9d3e1}
 @media (min-width:640px){.hero-who img{width:84px;height:84px}}
+</style><style id="anim-css">
+/* 動きの演出：JSが動くときだけ隠す（JSが止まっても内容は見える） */
+@media (prefers-reduced-motion:no-preference){
+  html.js-anim .rv{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1);transition-delay:var(--d,0s)}
+  html.js-anim .rv.in{opacity:1;transform:none}
+  /* ファーストビュー：上から順にふわっと */
+  .hero > *, .hero .wrap > *{animation:heroUp .8s cubic-bezier(.2,.7,.2,1) both}
+  .hero > *:nth-child(2), .hero .wrap > *:nth-child(2){animation-delay:.08s}
+  .hero > *:nth-child(3), .hero .wrap > *:nth-child(3){animation-delay:.16s}
+  .hero > *:nth-child(4), .hero .wrap > *:nth-child(4){animation-delay:.24s}
+  .hero > *:nth-child(5), .hero .wrap > *:nth-child(5){animation-delay:.32s}
+  .hero > *:nth-child(6), .hero .wrap > *:nth-child(6){animation-delay:.40s}
+  @keyframes heroUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+  .hero::after,.hero:after{animation:numFloat 9s ease-in-out infinite alternate}
+  @keyframes numFloat{from{transform:translate(0,0)}to{transform:translate(-14px,10px)}}
+  /* 写真：ゴールドの光の輪がゆっくり脈打つ */
+  .hero-who img{animation:ring 3.2s ease-in-out 1s infinite}
+  @keyframes ring{0%,100%{box-shadow:0 0 0 0 rgba(198,166,107,.0),0 6px 18px rgba(0,0,0,.25)}50%{box-shadow:0 0 0 7px rgba(198,166,107,.22),0 6px 18px rgba(0,0,0,.25)}}
+  .progress a.now{animation:barGlow 2.4s ease-in-out infinite}
+  @keyframes barGlow{50%{filter:brightness(1.35)}}
+  /* カーソルを置いたとき */
+  .card,.gift,.purpose,.checkin,.course-card,.changes li,.pager a,.mini-card,.media,.content-card,.panel,.mcard,.work .text,.toc a,.chip,.qlist li,.flow-step,.route div,.step-dot,.work-no,.step-no,.mblock>h2 .st{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s,background .35s}
+  .gift:hover,.card:hover,.purpose:hover,.checkin:hover,.course-card:hover,.changes li:hover,.pager a:hover,.mini-card:hover,.media:hover,.content-card:hover,.panel:hover,.mcard:hover,.work .text:hover{transform:translateY(-4px);box-shadow:0 18px 38px rgba(16,29,53,.10)}
+  .chip:hover{transform:translateY(-2px);border-color:#c6a66b}
+  .qlist li:hover{transform:translateX(4px)}
+  .route div:hover,.flow-step:hover{transform:scale(1.02);border-color:#c6a66b}
+  .work:hover .work-no,.step:hover .step-dot,.section:hover .step-no,.mblock:hover>h2 .st{transform:rotate(-6deg) scale(1.06)}
+  /* ボタン：光がすっと走る */
+  .btn,.copy{position:relative;overflow:hidden;transition:transform .25s,box-shadow .25s,filter .25s}
+  .btn::after,.copy::after{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);transform:skewX(-20deg);transition:left .6s}
+  .btn:hover,.copy:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(16,29,53,.18)}
+  .btn:hover::after,.copy:hover::after{left:125%}
+  .btn:active,.copy:active{transform:translateY(0)}
+  /* チェックを入れた瞬間 */
+  .chip input:checked + span{animation:pop .35s ease}
+  @keyframes pop{40%{transform:scale(1.04)}}
+  .result{transition:background .4s}
+}
 </style></head>
 <body>
 <header class="topbar"><a href="lesson6.html">← 第6講座へ戻る</a><span>RAISECOLOR LEARNING MATERIALS</span><a href="../">講座一覧 ↗</a></header>
@@ -33,4 +71,16 @@
 <section class="section supplement" id="touchpoint"><div class="supplement-label">BONUS LESSON 02</div><div class="section-head" style="margin-top:10px"><div class="step-no">＋</div><div><h2>マルチタッチポイント戦略</h2><p>「良い発信なのに申し込みが入らない」を見直す。</p></div></div><div class="content-card"><h3>こんな状態になっていませんか？</h3><ul class="checklist"><li>配信は続けているのに、反応がない</li><li>再生数は増えたのに、申し込みにつながらない</li><li>いいねやコメントは増えたのに、売上が上がらない</li></ul><p>顧客が購入するまでには、複数の接点を通じて信頼を積み重ねる必要があります。これがマルチタッチポイント戦略です。</p><h3>顧客の心理動線</h3><div class="flow"><div class="flow-step"><strong>認知</strong> Instagramで見かける</div><div class="flow-arrow">↓</div><div class="flow-step"><strong>共感</strong> Threadsで価値観に共感する</div><div class="flow-arrow">↓</div><div class="flow-step"><strong>親近感</strong> stand.fmで人柄を知る</div><div class="flow-arrow">↓</div><div class="flow-step"><strong>教育</strong> LINE公式で情報を受け取る</div><div class="flow-arrow">↓</div><div class="flow-step"><strong>体験</strong> 無料特典で価値を実感する</div><div class="flow-arrow">↓</div><div class="flow-step"><strong>行動</strong> 個別相談に申し込む</div></div><h3>注目する指標を見直す</h3><div class="table-wrap"><table><thead><tr><th>注目しがちな指標</th><th>本当に重視したい視点</th></tr></thead><tbody><tr><td>再生数・フォロワー数・ランキング</td><td>何度も接触してくれる、関心の高い人との関係性</td></tr><tr><td>いいねの数</td><td>LINE登録や相談など、次の行動につながっているか</td></tr></tbody></table></div><div class="two-col"><div class="mini-card"><div class="label">FEW VIEWS</div><h4>再生数が少なくても</h4><p>何度も聞いてくれる人がいれば、商品を届ける機会をつくれます。</p></div><div class="mini-card"><div class="label">MANY VIEWS</div><h4>再生数が多くても</h4><p>次のステップへの導線がなければ、売上にはつながりにくくなります。</p></div></div><div class="quote">収益化とは、売り込むことだけではなく、信頼を積み重ねていくこと。</div><p>「どれだけ多くの人に見られたか」だけでなく、「同じ人と何回、質の高い接触ができたか」を意識しましょう。</p></div></section>
 <div class="footer-cta"><div><h2>学んだことを、ひとつ実践する</h2><p>まずは商品・導線・発信のうち、今いちばん弱い部分から整えましょう。</p></div><div class="footer-links"><a class="btn" href="../">講座一覧へ戻る ↗</a><a class="btn secondary" href="#top" onclick="window.scrollTo({top:0,behavior:'smooth'});return false">ページ上部へ ↑</a></div></div>
 <p class="backtop"><a href="lesson6.html">← 第6講座へ戻る</a>　　｜　　<a href="../">講座一覧へ →</a></p></main><footer class="page-footer">RAISECOLOR LEARNING MATERIALS · LESSON 06</footer>
-</body></html>
+<script id="anim-js">
+(function(){
+  if(!window.matchMedia||matchMedia('(prefers-reduced-motion: reduce)').matches||!('IntersectionObserver' in window))return;
+  var sel='.card,.purpose,.how,.notice,.work-head,.work .text,.mblock>h2,.mcard,.checkin,.message,.pager,.gift,.changes li,.course-card,.closing,.sec-title,.sec-sub,.step-label,.step h3,.step-dot,.intro-grid .panel,.toc,.section-head,.content-card,.footer-cta,.supplement-label,.saved+section';
+  var els=[].slice.call(document.querySelectorAll(sel)).filter(function(e){return !e.closest('.hero')});
+  els.forEach(function(e){e.classList.add('rv');
+    var sib=e.parentElement?[].slice.call(e.parentElement.children).filter(function(x){return x.classList.contains('rv')}):[];
+    var i=sib.indexOf(e); if(i>0&&i<6)e.style.setProperty('--d',(i*0.07)+'s');});
+  document.documentElement.classList.add('js-anim');
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{rootMargin:'0px 0px -8% 0px',threshold:.08});
+  els.forEach(function(e){io.observe(e)});
+})();
+</script></body></html>
