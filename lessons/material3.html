@@ -1,0 +1,198 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>SNSに「絶対の正解」がない理由｜第3講座 資料</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#FBF7F8; --paper:#FFFFFF; --ink:#3A2A33; --muted:#7D6A74;
+  --rose:#C46A8C; --rose-soft:#F4E3EA; --stem:#5F7D63; --stem-soft:#E7EEE7; --line:#E8D9DF; --mark:#F8DCE7;
+  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.9;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-inline:18px;padding-block:0 56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:700;line-height:1.45}
+p{margin:0}
+a{color:var(--rose)}
+a:focus-visible,.btn:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;padding:0 1px}
+b{font-weight:700}
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:16px;font-size:13px}
+.topnav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+@media (max-width:520px){.topnav .note{display:none}}
+.topnav a:hover{color:var(--rose)}
+.hero{padding-block:24px 32px;display:grid;gap:14px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--stem);font-weight:700}
+.hero-no{display:flex;align-items:center;gap:12px}
+.hero-no .dot{width:44px;height:44px;border-radius:50%;background:var(--stem);color:#fff;font-family:var(--display);font-size:20px;font-weight:700;display:grid;place-items:center;flex:none}
+.hero h1{font-size:clamp(27px,7.4vw,36px)}
+.hero .lead{color:var(--muted)}
+.progress{display:flex;gap:6px;margin-top:4px}
+.progress a{flex:1;height:5px;border-radius:3px;background:var(--line)}
+.progress a.done{background:var(--stem-soft)}
+.progress a.now{background:var(--rose)}
+section{padding-block:36px 0}
+.card{background:var(--paper);border:1px solid var(--line);padding:20px 18px;display:grid;gap:12px}
+.audio h2{font-size:19px}
+.audio iframe{width:100%;height:190px;border:0;border-radius:6px;background:var(--rose-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;background:var(--rose);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.btn:hover{filter:brightness(1.06)}
+.note{font-size:12.5px;color:var(--muted);line-height:1.7}
+.purpose{background:var(--rose-soft);padding:24px 20px;display:grid;gap:12px}
+.purpose .label{font-size:12px;letter-spacing:.16em;color:var(--rose);font-weight:700}
+.purpose .qs{display:grid;gap:4px;font-family:var(--display);font-size:18px;font-weight:700;line-height:1.6}
+.how{font-size:13.5px;color:var(--muted);border-left:3px solid var(--stem);padding:2px 0 2px 12px}
+.work{padding-block:44px 0}
+.work-head{display:grid;gap:4px;margin-bottom:16px}
+.work-no{font-family:var(--display);font-size:34px;line-height:1;color:var(--rose);font-weight:700;font-variant-numeric:tabular-nums}
+.work-head h2{font-size:22px}
+.work-head .sub{font-family:var(--display);color:var(--muted);font-size:15px}
+.work .text{display:grid;gap:12px}
+.box-title{font-size:12.5px;letter-spacing:.12em;color:var(--stem);font-weight:700;margin-bottom:4px}
+.qlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.qlist li{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--rose);padding:10px 14px;font-weight:500;line-height:1.75}
+.after{color:var(--ink)}
+.memo{display:grid;gap:6px}
+.memo label{font-size:12.5px;color:var(--muted);font-weight:700}
+textarea{width:100%;min-height:110px;resize:vertical;font:inherit;font-size:15px;line-height:1.8;color:var(--ink);background:var(--paper);border:1px dashed var(--line);border-radius:4px;padding:10px 12px}
+textarea:focus{border-style:solid;border-color:var(--rose)}
+.score{display:flex;align-items:center;gap:8px;font-size:14px}
+.score input{width:72px;font:inherit;font-size:16px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);text-align:center}
+.choices{background:var(--paper);border:1px solid var(--line);padding:16px;display:grid;gap:10px}
+.choices .ttl{font-family:var(--display);font-weight:700;font-size:16px;line-height:1.6}
+.choices .hint{font-size:12.5px;color:var(--muted)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:460px){.chips{grid-template-columns:1fr}}
+.chip{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:6px;padding:9px 11px;cursor:pointer;min-width:0}
+.chip input{accent-color:var(--rose);margin-top:6px;flex:none;width:16px;height:16px}
+.chip span{display:grid;line-height:1.55}
+.chip small{color:var(--muted);font-size:12px}
+.chip:has(input:checked){border-color:var(--rose);background:var(--rose-soft)}
+.deep{background:var(--stem-soft);padding:16px;display:grid;gap:8px}
+.deep ul{margin:0;padding-left:1.2em;display:grid;gap:6px;font-weight:500}
+.route{display:grid;gap:6px;counter-reset:r}
+.route div{background:var(--paper);border:1px solid var(--line);padding:8px 12px;font-weight:700;font-size:14.5px;text-align:center}
+.route i{display:block;text-align:center;color:var(--rose);font-style:normal;line-height:1}
+.checkin{background:var(--paper);border:1px solid var(--line);padding:24px 18px;display:grid;gap:16px}
+.checkin h2{font-size:21px}
+.message{padding:32px 20px;background:var(--rose-soft);display:grid;gap:12px;border-radius:2px}
+.message .label{font-family:var(--display);font-size:13px;letter-spacing:.2em;color:var(--rose);font-weight:700}
+.message p{font-family:var(--display);font-size:16px;line-height:2}
+.sign-row{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.sign-row img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 22%}
+.sign{font-family:var(--display);font-size:17px}
+.mat{display:grid;gap:10px}
+.mat .ttl{font-family:var(--display);font-size:18px;font-weight:700}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pager a{background:var(--paper);border:1px solid var(--line);padding:12px 14px;text-decoration:none;color:var(--ink);display:grid;gap:2px;min-width:0}
+.pager a small{color:var(--muted);font-size:12px}
+.pager a b{font-family:var(--display);font-size:15px;line-height:1.5}
+.pager .next{text-align:right;grid-column:2}
+.pager a:hover{border-color:var(--rose)}
+.saved{font-size:12px;color:var(--stem);min-height:1.2em;text-align:right}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.topnav,.audio,.pager,.btns{display:none} textarea{border:1px solid #ccc}}
+
+.lead2{font-family:var(--display);color:var(--muted);font-size:15px}
+.mblock{padding-block:36px 0;display:grid;gap:12px}
+.mblock h2{font-size:21px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.mblock h2 .st{font-size:12.5px;letter-spacing:.14em;color:var(--paper);background:var(--rose);padding:2px 10px;border-radius:3px;font-family:var(--body);font-weight:700;flex:none}
+.mblock h3{font-size:17px;margin-top:6px}
+.plain{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.checks{display:grid;gap:8px}
+.callout{background:var(--rose-soft);padding:18px;display:grid;gap:8px}
+.callout .ttl{font-family:var(--display);font-weight:700;font-size:16.5px}
+.callout.green{background:var(--stem-soft)}
+.prompt{position:relative;background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--stem);padding:14px 14px 14px;font-size:14px;line-height:1.75;white-space:pre-wrap;word-break:break-word;font-family:var(--body);margin:0}
+.copy{justify-self:start;font:inherit;font-size:13px;font-weight:700;color:var(--stem);background:transparent;border:1.5px solid var(--stem);border-radius:999px;padding:6px 14px;cursor:pointer}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;background:var(--paper)}
+.tbl th,.tbl td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;line-height:1.65}
+.tbl th{background:var(--rose-soft);font-weight:700}
+.tbl td:first-child{font-weight:700;white-space:nowrap}
+@media (max-width:420px){.tbl td:first-child{white-space:normal}}
+.result{background:var(--stem-soft);padding:12px 14px;font-size:14.5px;display:grid;gap:4px}
+.result b{color:var(--stem)}
+.result .count{font-family:var(--display);font-size:18px;font-weight:700}
+.ex{background:var(--paper);border:1px dashed var(--line);padding:14px;white-space:pre-wrap;font-size:14.5px;line-height:1.8}
+.pill{display:inline-block;font-size:12px;font-weight:700;color:var(--rose);border:1px solid var(--rose);border-radius:999px;padding:1px 10px;margin-bottom:6px}
+.fields{display:grid;gap:10px}
+.fields input{width:100%;font:inherit;font-size:15px;padding:9px 12px;border:1px dashed var(--line);border-radius:4px;background:var(--paper);color:var(--ink)}
+.fields label{font-size:12.5px;color:var(--muted);font-weight:700;display:grid;gap:4px}
+.audio-file{display:grid;gap:10px}
+.audio-file iframe{width:100%;height:120px;border:0;border-radius:6px;background:var(--rose-soft)}
+</style></head><body><div class="wrap">
+<nav class="topnav"><a href="lesson3.html">← 第3講座へ戻る</a><a href="../">講座一覧</a></nav>
+<header class="hero">
+<div class="hero-no"><div class="dot">3</div><div class="eyebrow">第3講座の資料｜コラム</div></div>
+<h1>SNSに「絶対の正解」がない理由</h1>
+</header>
+<section class="mblock"><h2><span>「この方法が正解です」に振り回されないで</span></h2>
+<p>SNS運用について調べていると、「この方法が正解です」「こうすれば伸びます」「これをやれば集客できます」という情報をたくさん見かけます。</p>
+<p>もちろん参考になる情報もありますが、実際には<b>SNSに“誰にでも当てはまる絶対の正解”はありません。</b>なぜなら、SNSは一人ひとり条件が違うからです。</p>
+</section>
+<section class="mblock"><h2><span>料理と同じで、「おいしい」は人それぞれ</span></h2>
+<p>例えば料理をイメージしてみてください。甘いものが好きな人もいれば、辛いものが好きな人もいます。和食が好きな人もいれば、洋食が好きな人もいます。同じ料理でも、人によって「おいしい」と感じるものが違いますよね。</p>
+<p>SNSもそれと同じです。以下のような要素によって、合う発信方法や成果の出方は大きく変わります。</p>
+<ul class="qlist"><li>性格</li><li>過去の経験</li><li>得意なこと</li><li>発信している内容</li><li>届けたい相手</li><li>フォロワー層</li><li>ライフスタイル</li><li>現在のSNSトレンドや時代背景</li></ul>
+<p>そのため、他人の成功事例をそのまま真似しても、同じ結果になるとは限りません。</p>
+<div class="callout"><p><b>大切なのは、「誰かの正解」を探し続けることではなく、自分自身に合った発信スタイルを見つけていくことです。</b></p></div>
+</section>
+<section class="mblock"><h2><span>試して、見て、整えていく</span></h2>
+<p>実際に投稿しながら、次のことを確認して、少しずつ調整していくことが重要です。</p>
+<ul class="qlist"><li>どんな内容に反応があるのか</li><li>どんな発信が自分らしく続けられるのか</li><li>どんな人が集まってくるのか</li></ul>
+<p>また、SNSは常に変化しています。アルゴリズムの変更やユーザーの行動変化によって、以前はうまくいっていた方法が通用しなくなることもあります。</p>
+<p>だからこそ、「これを覚えれば一生安泰」ではなく、このサイクルを繰り返していくことが、SNS運用では非常に大切です。</p>
+<div class="route"><div>まず試してみる</div><i>↓</i><div>結果を見る</div><i>↓</i><div>改善する</div></div>
+</section>
+<section class="mblock"><h2><span>まとめ</span></h2>
+<p>SNSには万能な正解はありません。大切なのは、他人の成功パターンをそのまま追いかけることではなく、自分自身の強みや価値観、届けたい相手に合わせて発信を育てていくことです。</p>
+<p>小さく試し、結果を見ながら改善を続ける。その積み重ねが、あなたらしい発信と、長く続く集客の仕組みにつながっていきます。</p>
+<div class="memo"><label for="m19">読んでみて、自分の発信で「試してみたいこと」</label><textarea id="m19" data-k="m19" placeholder="思いついたことから、短くてもOKです"></textarea></div>
+</section>
+<div class="saved" id="saved" aria-live="polite" style="margin-top:12px"></div>
+<section><nav class="pager">
+<a href="lesson3.html"><small>← 講座にもどる</small><b>第3講座 発信の軸を作る</b></a>
+<a class="next" href="lesson4.html"><small>次の講座 →</small><b>第4講座 SNSから相談につなげる</b></a>
+</nav></section>
+</div><script>
+(function(){
+  var KEY='umemura-lesson-103';
+  var data={};
+  try{data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){data={}}
+  var fields=document.querySelectorAll('[data-k]');
+  fields.forEach(function(el){
+    var k=el.getAttribute('data-k');
+    if(el.type==='checkbox'){el.checked=!!data[k]}else if(data[k]!=null){el.value=data[k]}
+    el.addEventListener(el.type==='checkbox'?'change':'input',function(){
+      data[k]=el.type==='checkbox'?el.checked:el.value;
+      try{localStorage.setItem(KEY,JSON.stringify(data));
+        var s=document.getElementById('saved');if(s){s.textContent='この端末に保存しました';clearTimeout(window.__t);window.__t=setTimeout(function(){s.textContent=''},1800)}
+      }catch(e){}
+    });
+  });
+})();
+
+document.querySelectorAll('[data-diag]').forEach(function(box){
+  var res=box.querySelector('.result'); var msgs=JSON.parse(box.getAttribute('data-diag'));
+  function upd(){var c=box.querySelectorAll('input[type=checkbox]:checked').length;
+    var m=c<=2?msgs[0]:(c<=4?msgs[1]:msgs[2]);
+    res.innerHTML='<span class="count">チェック数：'+c+' / 6</span><span>'+m+'</span>';
+    var all=document.querySelectorAll('[data-diag]'),low=null,lc=99;
+    all.forEach(function(b){var n=b.querySelectorAll('input:checked').length;if(n<lc){lc=n;low=b.getAttribute('data-name')}});
+    var tot=document.querySelectorAll('[data-diag] input:checked').length;var f=document.getElementById('final');if(f)f.innerHTML=!tot?'STEP1〜4にチェックすると、ここに結果が出ます':'いちばんチェックが少ないのは <b>'+low+'</b> です（'+lc+'個）';}
+  box.addEventListener('change',upd);upd();
+});
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+  var t=document.getElementById(b.getAttribute('data-for')).innerText;
+  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='コピーしました'},function(){b.textContent='長押しでコピーしてください'});
+  setTimeout(function(){b.textContent='コピーする'},2000);});});
+</script></body></html>

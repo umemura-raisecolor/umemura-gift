@@ -1,0 +1,236 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>商品発掘ワーク｜第1講座 資料</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+:root{
+  --bg:#FBF7F8; --paper:#FFFFFF; --ink:#3A2A33; --muted:#7D6A74;
+  --rose:#C46A8C; --rose-soft:#F4E3EA; --stem:#5F7D63; --stem-soft:#E7EEE7; --line:#E8D9DF; --mark:#F8DCE7;
+  --display:"Zen Old Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#1E171B; --paper:#2A2026; --ink:#F2E8EC; --muted:#BFA9B4;
+  --rose:#E59AB6; --rose-soft:#3A2731; --stem:#9DBFA0; --stem-soft:#26302A; --line:#3E3038; --mark:#55303F; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15.5px;line-height:1.9;margin:0}
+.wrap{max-width:640px;margin:0 auto;padding-inline:18px;padding-block:0 56px}
+h1,h2,h3{font-family:var(--display);text-wrap:balance;margin:0;font-weight:700;line-height:1.45}
+p{margin:0}
+a{color:var(--rose)}
+a:focus-visible,.btn:focus-visible,textarea:focus-visible,input:focus-visible{outline:2px solid var(--rose);outline-offset:3px}
+mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;padding:0 1px}
+b{font-weight:700}
+.topnav{display:flex;justify-content:space-between;align-items:center;gap:12px;padding-block:16px;font-size:13px}
+.topnav a{text-decoration:none;color:var(--muted);white-space:nowrap}
+@media (max-width:520px){.topnav .note{display:none}}
+.topnav a:hover{color:var(--rose)}
+.hero{padding-block:24px 32px;display:grid;gap:14px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:12px;letter-spacing:.18em;color:var(--stem);font-weight:700}
+.hero-no{display:flex;align-items:center;gap:12px}
+.hero-no .dot{width:44px;height:44px;border-radius:50%;background:var(--stem);color:#fff;font-family:var(--display);font-size:20px;font-weight:700;display:grid;place-items:center;flex:none}
+.hero h1{font-size:clamp(27px,7.4vw,36px)}
+.hero .lead{color:var(--muted)}
+.progress{display:flex;gap:6px;margin-top:4px}
+.progress a{flex:1;height:5px;border-radius:3px;background:var(--line)}
+.progress a.done{background:var(--stem-soft)}
+.progress a.now{background:var(--rose)}
+section{padding-block:36px 0}
+.card{background:var(--paper);border:1px solid var(--line);padding:20px 18px;display:grid;gap:12px}
+.audio h2{font-size:19px}
+.audio iframe{width:100%;height:190px;border:0;border-radius:6px;background:var(--rose-soft)}
+.btns{display:flex;flex-wrap:wrap;gap:8px}
+.btn{display:inline-flex;align-items:center;gap:6px;text-decoration:none;font-weight:700;font-size:14px;padding:10px 18px;border-radius:999px;background:var(--rose);color:var(--paper)}
+.btn.ghost{background:transparent;color:var(--rose);border:1.5px solid var(--rose)}
+.btn:hover{filter:brightness(1.06)}
+.note{font-size:12.5px;color:var(--muted);line-height:1.7}
+.purpose{background:var(--rose-soft);padding:24px 20px;display:grid;gap:12px}
+.purpose .label{font-size:12px;letter-spacing:.16em;color:var(--rose);font-weight:700}
+.purpose .qs{display:grid;gap:4px;font-family:var(--display);font-size:18px;font-weight:700;line-height:1.6}
+.how{font-size:13.5px;color:var(--muted);border-left:3px solid var(--stem);padding:2px 0 2px 12px}
+.work{padding-block:44px 0}
+.work-head{display:grid;gap:4px;margin-bottom:16px}
+.work-no{font-family:var(--display);font-size:34px;line-height:1;color:var(--rose);font-weight:700;font-variant-numeric:tabular-nums}
+.work-head h2{font-size:22px}
+.work-head .sub{font-family:var(--display);color:var(--muted);font-size:15px}
+.work .text{display:grid;gap:12px}
+.box-title{font-size:12.5px;letter-spacing:.12em;color:var(--stem);font-weight:700;margin-bottom:4px}
+.qlist{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.qlist li{background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--rose);padding:10px 14px;font-weight:500;line-height:1.75}
+.after{color:var(--ink)}
+.memo{display:grid;gap:6px}
+.memo label{font-size:12.5px;color:var(--muted);font-weight:700}
+textarea{width:100%;min-height:110px;resize:vertical;font:inherit;font-size:15px;line-height:1.8;color:var(--ink);background:var(--paper);border:1px dashed var(--line);border-radius:4px;padding:10px 12px}
+textarea:focus{border-style:solid;border-color:var(--rose)}
+.score{display:flex;align-items:center;gap:8px;font-size:14px}
+.score input{width:72px;font:inherit;font-size:16px;padding:6px 8px;border:1px solid var(--line);border-radius:4px;background:var(--paper);color:var(--ink);text-align:center}
+.choices{background:var(--paper);border:1px solid var(--line);padding:16px;display:grid;gap:10px}
+.choices .ttl{font-family:var(--display);font-weight:700;font-size:16px;line-height:1.6}
+.choices .hint{font-size:12.5px;color:var(--muted)}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+@media (max-width:460px){.chips{grid-template-columns:1fr}}
+.chip{display:flex;gap:10px;align-items:flex-start;border:1px solid var(--line);border-radius:6px;padding:9px 11px;cursor:pointer;min-width:0}
+.chip input{accent-color:var(--rose);margin-top:6px;flex:none;width:16px;height:16px}
+.chip span{display:grid;line-height:1.55}
+.chip small{color:var(--muted);font-size:12px}
+.chip:has(input:checked){border-color:var(--rose);background:var(--rose-soft)}
+.deep{background:var(--stem-soft);padding:16px;display:grid;gap:8px}
+.deep ul{margin:0;padding-left:1.2em;display:grid;gap:6px;font-weight:500}
+.route{display:grid;gap:6px;counter-reset:r}
+.route div{background:var(--paper);border:1px solid var(--line);padding:8px 12px;font-weight:700;font-size:14.5px;text-align:center}
+.route i{display:block;text-align:center;color:var(--rose);font-style:normal;line-height:1}
+.checkin{background:var(--paper);border:1px solid var(--line);padding:24px 18px;display:grid;gap:16px}
+.checkin h2{font-size:21px}
+.message{padding:32px 20px;background:var(--rose-soft);display:grid;gap:12px;border-radius:2px}
+.message .label{font-family:var(--display);font-size:13px;letter-spacing:.2em;color:var(--rose);font-weight:700}
+.message p{font-family:var(--display);font-size:16px;line-height:2}
+.sign-row{display:flex;align-items:center;justify-content:flex-end;gap:12px}
+.sign-row img{width:48px;height:48px;border-radius:50%;object-fit:cover;object-position:50% 22%}
+.sign{font-family:var(--display);font-size:17px}
+.mat{display:grid;gap:10px}
+.mat .ttl{font-family:var(--display);font-size:18px;font-weight:700}
+.pager{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.pager a{background:var(--paper);border:1px solid var(--line);padding:12px 14px;text-decoration:none;color:var(--ink);display:grid;gap:2px;min-width:0}
+.pager a small{color:var(--muted);font-size:12px}
+.pager a b{font-family:var(--display);font-size:15px;line-height:1.5}
+.pager .next{text-align:right;grid-column:2}
+.pager a:hover{border-color:var(--rose)}
+.saved{font-size:12px;color:var(--stem);min-height:1.2em;text-align:right}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+@media print{.topnav,.audio,.pager,.btns{display:none} textarea{border:1px solid #ccc}}
+
+.lead2{font-family:var(--display);color:var(--muted);font-size:15px}
+.mblock{padding-block:36px 0;display:grid;gap:12px}
+.mblock h2{font-size:21px;display:flex;gap:10px;align-items:baseline;flex-wrap:wrap}
+.mblock h2 .st{font-size:12.5px;letter-spacing:.14em;color:var(--paper);background:var(--rose);padding:2px 10px;border-radius:3px;font-family:var(--body);font-weight:700;flex:none}
+.mblock h3{font-size:17px;margin-top:6px}
+.plain{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.checks{display:grid;gap:8px}
+.callout{background:var(--rose-soft);padding:18px;display:grid;gap:8px}
+.callout .ttl{font-family:var(--display);font-weight:700;font-size:16.5px}
+.callout.green{background:var(--stem-soft)}
+.prompt{position:relative;background:var(--paper);border:1px solid var(--line);border-left:3px solid var(--stem);padding:14px 14px 14px;font-size:14px;line-height:1.75;white-space:pre-wrap;word-break:break-word;font-family:var(--body);margin:0}
+.copy{justify-self:start;font:inherit;font-size:13px;font-weight:700;color:var(--stem);background:transparent;border:1.5px solid var(--stem);border-radius:999px;padding:6px 14px;cursor:pointer}
+.tbl{width:100%;border-collapse:collapse;font-size:14px;background:var(--paper)}
+.tbl th,.tbl td{border:1px solid var(--line);padding:9px 10px;text-align:left;vertical-align:top;line-height:1.65}
+.tbl th{background:var(--rose-soft);font-weight:700}
+.tbl td:first-child{font-weight:700;white-space:nowrap}
+@media (max-width:420px){.tbl td:first-child{white-space:normal}}
+.result{background:var(--stem-soft);padding:12px 14px;font-size:14.5px;display:grid;gap:4px}
+.result b{color:var(--stem)}
+.result .count{font-family:var(--display);font-size:18px;font-weight:700}
+.ex{background:var(--paper);border:1px dashed var(--line);padding:14px;white-space:pre-wrap;font-size:14.5px;line-height:1.8}
+.pill{display:inline-block;font-size:12px;font-weight:700;color:var(--rose);border:1px solid var(--rose);border-radius:999px;padding:1px 10px;margin-bottom:6px}
+.fields{display:grid;gap:10px}
+.fields input{width:100%;font:inherit;font-size:15px;padding:9px 12px;border:1px dashed var(--line);border-radius:4px;background:var(--paper);color:var(--ink)}
+.fields label{font-size:12.5px;color:var(--muted);font-weight:700;display:grid;gap:4px}
+.audio-file{display:grid;gap:10px}
+.audio-file iframe{width:100%;height:120px;border:0;border-radius:6px;background:var(--rose-soft)}
+</style></head><body><div class="wrap">
+<nav class="topnav"><a href="lesson1.html">← 第1講座へ戻る</a><a href="../">講座一覧</a></nav>
+<header class="hero">
+<div class="hero-no"><div class="dot">1</div><div class="eyebrow">第1講座の資料｜ワーク</div></div>
+<h1>商品発掘ワーク</h1>
+<p class="lead2">あなたの人生経験を、価値ある商品へ変えるために</p>
+</header>
+<p class="how" style="margin-top:24px">書き込んだ内容やチェックは、このスマホ・パソコンのブラウザにだけ保存されます（ほかの人には見えません）。</p>
+<section class="mblock"><h2><span>はじめに</span></h2>
+<p>「商品を作りたいけれど、何を商品にすればいいかわからない」</p>
+<p>そんな悩みを抱えている方は少なくありません。しかし実際には、商品になるものがないのではなく、<b>まだ価値として整理できていないだけ</b>というケースがほとんどです。</p>
+<div class="callout"><p>あなたがこれまで経験してきたこと。悩んできたこと。乗り越えてきたこと。学んできたこと。人から感謝されてきたこと。</p><p><b>その中には、誰かを助ける価値が眠っています。</b></p></div>
+<p>このワークでは、過去を振り返ることが目的ではありません。あなたの人生経験の中にある<mark>「商品の原石」を見つける</mark>ことが目的になります。</p>
+</section>
+<section class="mblock"><h2><span>なぜ商品発掘が必要なのか？</span></h2>
+<p>多くの人は、商品を作ろうとすると、「何を教えればいいんだろう」「自分には特別なスキルがない」と考えてしまいます。</p>
+<p>でも、お客様が求めているのは、必ずしも資格や肩書きではありません。むしろ、自分と同じ悩みを経験し、乗り越えてきた人の言葉や経験に価値を感じることが多くあります。</p>
+<p>だからこそ、商品設計の前に、まずは自分自身の経験を整理する必要があるんです。</p>
+<div class="callout green"><p>商品は作るものではなく、<b>発掘するもの</b>。</p><p>このワークでは、その第一歩を行っていきます。</p></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP1</span><span>人生の転機を振り返る</span></h2>
+<p>あなたの人生の中で、「大きな変化があった出来事」を書き出してください。</p>
+<div class="memo"><label for="m13-0">幼少期</label><textarea id="m13-0" data-k="m13-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m13-1">学生時代</label><textarea id="m13-1" data-k="m13-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m13-2">20代</label><textarea id="m13-2" data-k="m13-2" placeholder=""></textarea></div>
+<div class="memo"><label for="m13-3">30代</label><textarea id="m13-3" data-k="m13-3" placeholder=""></textarea></div>
+<div class="memo"><label for="m13-4">40代以降</label><textarea id="m13-4" data-k="m13-4" placeholder=""></textarea></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP2</span><span>悩み・苦労した経験を書き出す</span></h2>
+<p>これまで悩んできたことを書いてみましょう。どんな内容でも構いません。</p>
+<p>例：人間関係／仕事／お金／子育て／パートナーシップ／健康／自信／起業　など</p>
+<div class="memo"><label for="m17-0">①</label><textarea id="m17-0" data-k="m17-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m17-1">②</label><textarea id="m17-1" data-k="m17-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m17-2">③</label><textarea id="m17-2" data-k="m17-2" placeholder=""></textarea></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP3</span><span>その悩みをどう乗り越えたか</span></h2>
+<p>その悩みや課題に対して、あなたは何をしましたか？　どのように変化しましたか？</p>
+<div class="memo"><label for="m20-0">①</label><textarea id="m20-0" data-k="m20-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m20-1">②</label><textarea id="m20-1" data-k="m20-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m20-2">③</label><textarea id="m20-2" data-k="m20-2" placeholder=""></textarea></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP4</span><span>人から感謝されたこと</span></h2>
+<p>これまで、「ありがとう」と言われた経験を書いてください。小さなことでも大丈夫です。</p>
+<div class="memo"><label for="m23-0">①</label><textarea id="m23-0" data-k="m23-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m23-1">②</label><textarea id="m23-1" data-k="m23-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m23-2">③</label><textarea id="m23-2" data-k="m23-2" placeholder=""></textarea></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP5</span><span>自然にできること</span></h2>
+<p>頑張らなくてもできること。人から褒められること。相談されること。を書いてみましょう。</p>
+<div class="memo"><label for="m26-0">①</label><textarea id="m26-0" data-k="m26-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m26-1">②</label><textarea id="m26-1" data-k="m26-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m26-2">③</label><textarea id="m26-2" data-k="m26-2" placeholder=""></textarea></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP6</span><span>お金や時間を使って学んできたこと</span></h2>
+<p>これまで自己投資してきたことを書いてください。</p>
+<div class="memo"><label for="m29-0">①</label><textarea id="m29-0" data-k="m29-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m29-1">②</label><textarea id="m29-1" data-k="m29-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m29-2">③</label><textarea id="m29-2" data-k="m29-2" placeholder=""></textarea></div>
+</section>
+<section class="mblock"><h2><span class="st">STEP7</span><span>商品の原石を探す</span></h2>
+<p>ここまでの内容を見返しながら考えてみましょう。</p>
+<div class="memo"><label for="m32-0">繰り返し出てくるテーマは何ですか？</label><textarea id="m32-0" data-k="m32-0" placeholder=""></textarea></div>
+<div class="memo"><label for="m32-1">あなたが乗り越えてきたことは何ですか？</label><textarea id="m32-1" data-k="m32-1" placeholder=""></textarea></div>
+<div class="memo"><label for="m32-2">人に伝えられそうなことは何ですか？</label><textarea id="m32-2" data-k="m32-2" placeholder=""></textarea></div>
+<div class="memo"><label for="m32-3">どんな人の役に立てそうですか？</label><textarea id="m32-3" data-k="m32-3" placeholder=""></textarea></div>
+</section>
+<section><div class="message"><div class="label">最後に</div><p>あなたの商品は、どこか遠くにあるものではありません。これまでの人生経験の中に、すでに存在しています。</p><p>大切なのは、新しい何かを探すことではなく、自分の経験の価値に気づくこと。商品発掘とは、人生を振り返る作業ではなく、<b>未来の商品を見つける作業</b>です。</p><p>完璧な答えを出そうとせず、まずは思いつくまま書き出してみてください。その中に、あなたらしい商品づくりのヒントが眠っています。</p><div class="sign-row"><img src="../umemura.jpg" alt="" width="48" height="48"><span class="sign">梅村恵美</span></div></div></section>
+<div class="saved" id="saved" aria-live="polite" style="margin-top:12px"></div>
+<section><nav class="pager">
+<a href="lesson1.html"><small>← 講座にもどる</small><b>第1講座 自分を知る</b></a>
+<a class="next" href="lesson2.html"><small>次の講座 →</small><b>第2講座 売れるコンセプトを作る</b></a>
+</nav></section>
+</div><script>
+(function(){
+  var KEY='umemura-lesson-101';
+  var data={};
+  try{data=JSON.parse(localStorage.getItem(KEY)||'{}')||{}}catch(e){data={}}
+  var fields=document.querySelectorAll('[data-k]');
+  fields.forEach(function(el){
+    var k=el.getAttribute('data-k');
+    if(el.type==='checkbox'){el.checked=!!data[k]}else if(data[k]!=null){el.value=data[k]}
+    el.addEventListener(el.type==='checkbox'?'change':'input',function(){
+      data[k]=el.type==='checkbox'?el.checked:el.value;
+      try{localStorage.setItem(KEY,JSON.stringify(data));
+        var s=document.getElementById('saved');if(s){s.textContent='この端末に保存しました';clearTimeout(window.__t);window.__t=setTimeout(function(){s.textContent=''},1800)}
+      }catch(e){}
+    });
+  });
+})();
+
+document.querySelectorAll('[data-diag]').forEach(function(box){
+  var res=box.querySelector('.result'); var msgs=JSON.parse(box.getAttribute('data-diag'));
+  function upd(){var c=box.querySelectorAll('input[type=checkbox]:checked').length;
+    var m=c<=2?msgs[0]:(c<=4?msgs[1]:msgs[2]);
+    res.innerHTML='<span class="count">チェック数：'+c+' / 6</span><span>'+m+'</span>';
+    var all=document.querySelectorAll('[data-diag]'),low=null,lc=99;
+    all.forEach(function(b){var n=b.querySelectorAll('input:checked').length;if(n<lc){lc=n;low=b.getAttribute('data-name')}});
+    var tot=document.querySelectorAll('[data-diag] input:checked').length;var f=document.getElementById('final');if(f)f.innerHTML=!tot?'STEP1〜4にチェックすると、ここに結果が出ます':'いちばんチェックが少ないのは <b>'+low+'</b> です（'+lc+'個）';}
+  box.addEventListener('change',upd);upd();
+});
+document.querySelectorAll('.copy').forEach(function(b){b.addEventListener('click',function(){
+  var t=document.getElementById(b.getAttribute('data-for')).innerText;
+  (navigator.clipboard?navigator.clipboard.writeText(t):Promise.reject()).then(function(){b.textContent='コピーしました'},function(){b.textContent='長押しでコピーしてください'});
+  setTimeout(function(){b.textContent='コピーする'},2000);});});
+</script></body></html>
